@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .butttons a{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+      }
+      .nav_container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+      }
+
+      .navigator ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 400px;
+      }
+      .navigator ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .nav {
+        background-color: aquamarine;
+      }
+      input {
+        height: 30px;
+        width: 70%;
+      }
+      .search {
+        width: 20%;
+      }
+      .btn {
+        height: 30px;
+        width: 28%;
+        background-color: orangered;
+        border: none;
+        color: white;
+        font-weight: 500;
+        border-radius: 2px;
+      }
+      .searchx {
+        border: none;
+      }
+      .nav {
+        box-shadow: 0px 0px 3px 0px black;
+        position:fixed;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2px;
+        padding-top:50px;
+      }
+      .main {
+        padding: 10px;
+        background-color: beige;
+        height: 100%;
+        width: 90%;
+        box-shadow: 0px 2px 0px 0px black;
+      }
+      .main_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+      }
+      .image_price{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        width: 30%;
+      }
+      .product_description{
+        width: 60%;
+      }
+      .product_details{
+        display: flex;
+        flex-direction: column;
+        padding:30px;
+        gap: 5px;
+
+      }
+      .buy,.details{
+        height: 30px;
+        width: 70%;
+        background-color: rgb(241, 68, 5);
+        border-radius: 4px;
+        border:none;
+        color: white;
+      }
+      .buy,.details:hover{
+        cursor: pointer
+      }
+      .butttons{
+        display: flex;
+        width: 18%;
+        gap: 10px;
+        flex-direction: column;
+
+      }
+      img{
+        height: 200px;
+        width: 200px; 
+        }
+    </style>
+    <title>Mobile Shop</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav_container">
+        <div class="logo">
+          <h2>MHUTT</h2>
+        </div>
+        <div class="navigator">
+          <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="product">Product</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input type="search" class="searchx" name="search" id="search" />
+          <button class="btn">seach</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <div>
+            {{%CONTENT%}}
+        </div>
+    </main>
+  </body>
+</html>
